@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <MBProgressHUD.h>
+#import <ReactiveCocoa.h>
+#import <PureLayout.h>
 
 @interface ViewController ()
 
@@ -16,8 +19,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    self.view.backgroundColor = [UIColor magentaColor];
+    
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor redColor];
+    [button setTitle:@"work" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        NSLog(@"buttonClicked");
+        NSLog(@"%@",x);
+    }];
+    
+    [self.view addSubview:button];
+    [button autoSetDimension:ALDimensionWidth toSize:100];
+    [button autoSetDimension:ALDimensionHeight toSize:44];
+    [button autoCenterInSuperviewMargins];
 }
+
+- (void)buttonClick
+{
+    NSLog(@"点击了");
+}
+
 
 
 - (void)didReceiveMemoryWarning {
