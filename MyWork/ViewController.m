@@ -19,9 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.view.backgroundColor = [UIColor magentaColor];
-    
+        
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor redColor];
     [button setTitle:@"work" forState:UIControlStateNormal];
