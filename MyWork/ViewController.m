@@ -11,6 +11,8 @@
 #import <ReactiveCocoa.h>
 #import <PureLayout.h>
 
+#import "TimeIntervalReduceLabel.h"
+
 @interface ViewController ()
 
 @end
@@ -20,6 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
         
+    [self RACButton];
+    
+    [self reduceTime];
+
+    
+    
+}
+
+- (void)reduceTime
+{
+    TimeIntervalReduceLabel * reduceLbl = [[TimeIntervalReduceLabel alloc] initWithFrame:CGRectMake(10, 90, [[UIScreen mainScreen] bounds].size.width-20, 30)];
+    reduceLbl.textColor = [UIColor redColor];
+    reduceLbl.textAlignment = NSTextAlignmentCenter;
+    reduceLbl.backgroundColor = [UIColor greenColor];
+//    [reduceLbl startTimeIntervalWithStartTimeString:@"2017-02-24 17:30:00"];
+    [reduceLbl startTimeIntervalWithMillisecond:1210185];
+    [self.view addSubview:reduceLbl];
+}
+
+- (void)RACButton
+{
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor redColor];
     [button setTitle:@"work" forState:UIControlStateNormal];
@@ -42,10 +65,11 @@
 
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+
+
 
 
 @end

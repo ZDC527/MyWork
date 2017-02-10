@@ -16,6 +16,7 @@
 		716103421E35AEAA00F5D4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716103401E35AEAA00F5D4E8 /* LaunchScreen.storyboard */; };
 		7161034D1E35AEAA00F5D4E8 /* MyWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7161034C1E35AEAA00F5D4E8 /* MyWorkTests.m */; };
 		716103581E35AEAA00F5D4E8 /* MyWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */; };
+		71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		716103531E35AEAA00F5D4E8 /* MyWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkUITests.m; sourceTree = "<group>"; };
 		716103591E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalReduceLabel.h; sourceTree = "<group>"; };
+		71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalReduceLabel.m; sourceTree = "<group>"; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		CACBF71429DD286BD56F8827 /* libPods-MyWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +120,7 @@
 		716103311E35AEAA00F5D4E8 /* MyWork */ = {
 			isa = PBXGroup;
 			children = (
+				71E2F86B1E4C39FB0099743F /* base */,
 				716103351E35AEAA00F5D4E8 /* AppDelegate.h */,
 				716103361E35AEAA00F5D4E8 /* AppDelegate.m */,
 				716103381E35AEAA00F5D4E8 /* ViewController.h */,
@@ -154,6 +158,15 @@
 				716103591E35AEAA00F5D4E8 /* Info.plist */,
 			);
 			path = MyWorkUITests;
+			sourceTree = "<group>";
+		};
+		71E2F86B1E4C39FB0099743F /* base */ = {
+			isa = PBXGroup;
+			children = (
+				71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */,
+				71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		C85F22B728F01A3F0CBDB9B2 /* Frameworks */ = {
@@ -354,6 +367,7 @@
 				7161033A1E35AEAA00F5D4E8 /* ViewController.m in Sources */,
 				716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */,
 				716103341E35AEAA00F5D4E8 /* main.m in Sources */,
+				71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +607,7 @@
 				7161035E1E35AEAA00F5D4E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7161035F1E35AEAA00F5D4E8 /* Build configuration list for PBXNativeTarget "MyWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +616,7 @@
 				716103611E35AEAA00F5D4E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		716103621E35AEAA00F5D4E8 /* Build configuration list for PBXNativeTarget "MyWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +625,7 @@
 				716103641E35AEAA00F5D4E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
