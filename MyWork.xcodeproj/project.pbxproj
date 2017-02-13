@@ -17,6 +17,7 @@
 		7161034D1E35AEAA00F5D4E8 /* MyWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7161034C1E35AEAA00F5D4E8 /* MyWorkTests.m */; };
 		716103581E35AEAA00F5D4E8 /* MyWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */; };
 		71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */; };
+		71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		716103591E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalReduceLabel.h; sourceTree = "<group>"; };
 		71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalReduceLabel.m; sourceTree = "<group>"; };
+		71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlignmentLabel.h; sourceTree = "<group>"; };
+		71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlignmentLabel.m; sourceTree = "<group>"; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		CACBF71429DD286BD56F8827 /* libPods-MyWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +168,8 @@
 			children = (
 				71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */,
 				71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */,
+				71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */,
+				71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7161033A1E35AEAA00F5D4E8 /* ViewController.m in Sources */,
+				71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */,
 				716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */,
 				716103341E35AEAA00F5D4E8 /* main.m in Sources */,
 				71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */,
