@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <MBProgressHUD.h>
-#import <ReactiveCocoa.h>
-#import <PureLayout.h>
+#import "MBProgressHUD.h"
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <PureLayout/PureLayout.h>
 
 #import "TimeIntervalReduceLabel.h"
 

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A7D2046815D8359BF6DE3B4 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */; };
-		716103341E35AEAA00F5D4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103331E35AEAA00F5D4E8 /* main.m */; };
-		716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103361E35AEAA00F5D4E8 /* AppDelegate.m */; };
+		714FFEFC1F417B2D00D0D9C5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEF61F417B2D00D0D9C5 /* AFNetworking.framework */; };
+		714FFEFD1F417B2D00D0D9C5 /* iCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEF71F417B2D00D0D9C5 /* iCarousel.framework */; };
+		714FFEFE1F417B2D00D0D9C5 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEF81F417B2D00D0D9C5 /* MBProgressHUD.framework */; };
+		714FFEFF1F417B2D00D0D9C5 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEF91F417B2D00D0D9C5 /* pop.framework */; };
+		714FFF001F417B2D00D0D9C5 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEFA1F417B2D00D0D9C5 /* PureLayout.framework */; };
+		714FFF011F417B2D00D0D9C5 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFEFB1F417B2D00D0D9C5 /* ReactiveObjC.framework */; };
+		714FFF021F417BE500D0D9C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103361E35AEAA00F5D4E8 /* AppDelegate.m */; };
+		714FFF031F417BE500D0D9C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103331E35AEAA00F5D4E8 /* main.m */; };
 		7161033A1E35AEAA00F5D4E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103391E35AEAA00F5D4E8 /* ViewController.m */; };
 		7161033D1E35AEAA00F5D4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7161033B1E35AEAA00F5D4E8 /* Main.storyboard */; };
 		7161033F1E35AEAA00F5D4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7161033E1E35AEAA00F5D4E8 /* Assets.xcassets */; };
 		716103421E35AEAA00F5D4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716103401E35AEAA00F5D4E8 /* LaunchScreen.storyboard */; };
-		7161034D1E35AEAA00F5D4E8 /* MyWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7161034C1E35AEAA00F5D4E8 /* MyWorkTests.m */; };
-		716103581E35AEAA00F5D4E8 /* MyWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */; };
 		71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */; };
 		71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */; };
 		71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */; };
@@ -40,6 +43,12 @@
 
 /* Begin PBXFileReference section */
 		52EC9FD380E278B191B784BB /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
+		714FFEF61F417B2D00D0D9C5 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		714FFEF71F417B2D00D0D9C5 /* iCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCarousel.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/iCarousel/iCarousel.framework"; sourceTree = "<group>"; };
+		714FFEF81F417B2D00D0D9C5 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		714FFEF91F417B2D00D0D9C5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
+		714FFEFA1F417B2D00D0D9C5 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework"; sourceTree = "<group>"; };
+		714FFEFB1F417B2D00D0D9C5 /* ReactiveObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveObjC.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework"; sourceTree = "<group>"; };
 		7161032F1E35AEAA00F5D4E8 /* MyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716103331E35AEAA00F5D4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716103351E35AEAA00F5D4E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,18 +60,13 @@
 		716103411E35AEAA00F5D4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716103431E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716103481E35AEAA00F5D4E8 /* MyWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7161034C1E35AEAA00F5D4E8 /* MyWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkTests.m; sourceTree = "<group>"; };
-		7161034E1E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716103531E35AEAA00F5D4E8 /* MyWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkUITests.m; sourceTree = "<group>"; };
-		716103591E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalReduceLabel.h; sourceTree = "<group>"; };
 		71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalReduceLabel.m; sourceTree = "<group>"; };
 		71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlignmentLabel.h; sourceTree = "<group>"; };
 		71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlignmentLabel.m; sourceTree = "<group>"; };
 		71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
-		7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7D2046815D8359BF6DE3B4 /* Pods_MyWork.framework in Frameworks */,
+				714FFEFC1F417B2D00D0D9C5 /* AFNetworking.framework in Frameworks */,
+				714FFEFD1F417B2D00D0D9C5 /* iCarousel.framework in Frameworks */,
+				714FFEFE1F417B2D00D0D9C5 /* MBProgressHUD.framework in Frameworks */,
+				714FFEFF1F417B2D00D0D9C5 /* pop.framework in Frameworks */,
+				714FFF001F417B2D00D0D9C5 /* PureLayout.framework in Frameworks */,
+				714FFF011F417B2D00D0D9C5 /* ReactiveObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				716103311E35AEAA00F5D4E8 /* MyWork */,
-				7161034B1E35AEAA00F5D4E8 /* MyWorkTests */,
-				716103561E35AEAA00F5D4E8 /* MyWorkUITests */,
 				716103301E35AEAA00F5D4E8 /* Products */,
 				02A7EE00EFC171CB99F943F1 /* Pods */,
 				C85F22B728F01A3F0CBDB9B2 /* Frameworks */,
@@ -148,24 +155,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7161034B1E35AEAA00F5D4E8 /* MyWorkTests */ = {
-			isa = PBXGroup;
-			children = (
-				7161034C1E35AEAA00F5D4E8 /* MyWorkTests.m */,
-				7161034E1E35AEAA00F5D4E8 /* Info.plist */,
-			);
-			path = MyWorkTests;
-			sourceTree = "<group>";
-		};
-		716103561E35AEAA00F5D4E8 /* MyWorkUITests */ = {
-			isa = PBXGroup;
-			children = (
-				716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */,
-				716103591E35AEAA00F5D4E8 /* Info.plist */,
-			);
-			path = MyWorkUITests;
-			sourceTree = "<group>";
-		};
 		71E2F86B1E4C39FB0099743F /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +171,12 @@
 		C85F22B728F01A3F0CBDB9B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */,
+				714FFEF61F417B2D00D0D9C5 /* AFNetworking.framework */,
+				714FFEF71F417B2D00D0D9C5 /* iCarousel.framework */,
+				714FFEF81F417B2D00D0D9C5 /* MBProgressHUD.framework */,
+				714FFEF91F417B2D00D0D9C5 /* pop.framework */,
+				714FFEFA1F417B2D00D0D9C5 /* PureLayout.framework */,
+				714FFEFB1F417B2D00D0D9C5 /* ReactiveObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -374,12 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714FFF021F417BE500D0D9C5 /* AppDelegate.m in Sources */,
+				714FFF031F417BE500D0D9C5 /* main.m in Sources */,
 				7161033A1E35AEAA00F5D4E8 /* ViewController.m in Sources */,
-				716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */,
-				716103341E35AEAA00F5D4E8 /* main.m in Sources */,
 				71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */,
-				716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */,
-				716103341E35AEAA00F5D4E8 /* main.m in Sources */,
 				71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */,
 				71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */,
 			);
@@ -389,7 +381,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7161034D1E35AEAA00F5D4E8 /* MyWorkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716103581E35AEAA00F5D4E8 /* MyWorkUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
