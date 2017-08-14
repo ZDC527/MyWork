@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D754AAB953D40C90FAFC77C /* libPods-MyWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CACBF71429DD286BD56F8827 /* libPods-MyWork.a */; };
+		2A7D2046815D8359BF6DE3B4 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */; };
 		716103341E35AEAA00F5D4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103331E35AEAA00F5D4E8 /* main.m */; };
 		716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103361E35AEAA00F5D4E8 /* AppDelegate.m */; };
 		7161033A1E35AEAA00F5D4E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103391E35AEAA00F5D4E8 /* ViewController.m */; };
@@ -18,6 +18,7 @@
 		716103581E35AEAA00F5D4E8 /* MyWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103571E35AEAA00F5D4E8 /* MyWorkUITests.m */; };
 		71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */; };
 		71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */; };
+		71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,10 @@
 		71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalReduceLabel.m; sourceTree = "<group>"; };
 		71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlignmentLabel.h; sourceTree = "<group>"; };
 		71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlignmentLabel.m; sourceTree = "<group>"; };
+		71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
-		CACBF71429DD286BD56F8827 /* libPods-MyWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D754AAB953D40C90FAFC77C /* libPods-MyWork.a in Frameworks */,
+				2A7D2046815D8359BF6DE3B4 /* Pods_MyWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +169,8 @@
 		71E2F86B1E4C39FB0099743F /* base */ = {
 			isa = PBXGroup;
 			children = (
+				71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */,
+				71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */,
 				71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */,
 				71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */,
 				71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */,
@@ -177,7 +182,7 @@
 		C85F22B728F01A3F0CBDB9B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CACBF71429DD286BD56F8827 /* libPods-MyWork.a */,
+				7BA77121D188ECC34C19F1F4 /* Pods_MyWork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B6F5462C6BE288116FF61725 /* [CP] Embed Pods Frameworks */ = {
@@ -376,6 +381,7 @@
 				716103371E35AEAA00F5D4E8 /* AppDelegate.m in Sources */,
 				716103341E35AEAA00F5D4E8 /* main.m in Sources */,
 				71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */,
+				71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

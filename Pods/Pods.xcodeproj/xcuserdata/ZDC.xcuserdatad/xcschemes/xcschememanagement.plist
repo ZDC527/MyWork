@@ -29,7 +29,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>005990F8C7406317A190188DB8E3D19B</key>
+		<key>4A173EA54943EDC6C6A5B3C77F2D9577</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0A78FB12EE5F4EBCB033C418BA40D645</key>
+		<key>4EF62582500D26D73A3C9B12BBB444B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>175B076ED45EB1A3E40F58BA14036467</key>
+		<key>6B1714E816AE794962516E2ECBB40A5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<key>8BCB4F5DBA82AAB03BF4FB4A6BE458FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7936EA327C3E2FDB7043B2F51F608CA</key>
+		<key>B8D8C363B343A0778AE6633D70E11749</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC7A51F0B370F9976D21032BDDB7222E</key>
+		<key>C10312731FAC23CA8D6105E1DFE7C3BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6A5F4BB4EE62C811B00781DB0A753A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE1DDAD1549BFFBD3CB813F0DFFD2C8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE8845D1B016065857716F81CB4B69FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
