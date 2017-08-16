@@ -11,170 +11,107 @@
 #import "RACTestVC.h"
 
 
-@interface MWHomeVC ()
+@interface MWHomeVC ()<UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIButton * popBtn;
+@property (nonatomic, strong) UIScrollView * scrollLunch;
+@property (nonatomic, strong) TimeIntervalReduceLabel * reduceLbl;
+@property (nonatomic, strong) UIButton * pageTimeBtn;
 
 @property (nonatomic, strong) RACSignal * signal;
-
+@property (nonatomic, strong) NSMutableArray * lunchData;
+@property (nonatomic, assign) NSInteger index;
 @end
 
 @implementation MWHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.view.backgroundColor = [UIColor magentaColor];
-    
-    
-    [self RACButton];
+    self.navigationItem.title = @"首页";
     
     [self reduceTime];
 
-    [self.view addSubview:self.popBtn];
+    [self initData];
+    [self initScrollLunch];
+}
+
+- (void)initScrollLunch
+{
+    _scrollLunch = [[UIScrollView alloc] init];
+    _scrollLunch.delegate = self;
+    _scrollLunch.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    _scrollLunch.contentSize = CGSizeMake(SCREEN_WIDTH * self.lunchData.count, SCREEN_HEIGHT);
+    _scrollLunch.scrollEnabled = YES;
+    _scrollLunch.pagingEnabled = YES;
     
+    _pageTimeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _pageTimeBtn.frame = CGRectMake(SCREEN_WIDTH - 100, SCREEN_HEIGHT - 60, 80, 40);
+    _pageTimeBtn.backgroundColor = [UIColor lightTextColor];
+    [_pageTimeBtn setTitle:self.reduceLbl.text forState:UIControlStateNormal];
+    [_pageTimeBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_pageTimeBtn addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
+    [_scrollLunch addSubview:_pageTimeBtn];
+    
+    for (NSInteger i = 0; i < self.lunchData.count; i++) {
+        NSString *imgStr = [self.lunchData objectAtIndex:i];
+        if (imgStr) {
+            UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgStr]];
+            imageView.frame = CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            [_scrollLunch addSubview:imageView];
+        }
+    }
+}
+
+- (void)initData
+{
+    ///Users/ZDC/MyWork/MyWork/lunch
+//    NSString * lunchPath = [[NSBundle mainBundle]pathForResource:@"lunch" ofType:@"bundle"];
+//    
+//    self.lunchData = [[NSMutableArray alloc] initWithContentsOfFile:lunchPath];
+    self.lunchData = @[@"l1.jpg",@"l2.jpg",@"l3.jpg"].mutableCopy;
+}
+
+- (void)showLunchView
+{
+    [self.view addSubview:self.scrollLunch];
+    
+}
+
+- (void)nextPage
+{
+    if (_index == self.lunchData.count) {
+        self.scrollLunch.hidden = YES;
+        
+        return;
+    }
+    if (_index < self.lunchData.count) {
+        _index += 1;
+    }
+    self.scrollLunch.contentOffset = CGPointMake(SCREEN_WIDTH*_index, 0);
 }
 
 - (void)reduceTime
 {
-    TimeIntervalReduceLabel * reduceLbl = [[TimeIntervalReduceLabel alloc] initWithFrame:CGRectMake(10, 90, [[UIScreen mainScreen] bounds].size.width-20, 30)];
-    reduceLbl.textColor = [UIColor redColor];
-    reduceLbl.textAlignment = NSTextAlignmentCenter;
-    reduceLbl.backgroundColor = [UIColor greenColor];
+    _reduceLbl = [[TimeIntervalReduceLabel alloc] initWithFrame:CGRectMake(10, 90, SCREEN_WIDTH-20, 30)];
+    _reduceLbl.textColor = [UIColor redColor];
+    _reduceLbl.textAlignment = NSTextAlignmentCenter;
+    _reduceLbl.backgroundColor = [UIColor greenColor];
 //    [reduceLbl startTimeIntervalWithStartTimeString:@"2017-02-24 17:30:00"];
-    [reduceLbl startTimeIntervalWithMillisecond:1210185];
-    [self.view addSubview:reduceLbl];
+    [_reduceLbl startTimeIntervalWithMillisecond:1210185];
+    [self.scrollLunch addSubview:_reduceLbl];
 }
 
-- (void)RACButton
+#pragma mark UISCROLLVIEWDELEGATE
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.backgroundColor = [UIColor redColor];
-    [button setTitle:@"work" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"buttonClicked");
-        NSLog(@"%@",x);
-        
-        _signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            [subscriber sendNext:@"1"];
-            [subscriber sendCompleted];
-            NSLog(@"signal初始化");
-            return nil;
-        }];
-        [_signal subscribeNext:^(id  _Nullable x) {
-            if ([x boolValue]) {
-                button.backgroundColor = [UIColor greenColor];
-            } else {
-                button.backgroundColor = [UIColor yellowColor];
-            }
-        } completed:^{
-            RACTestVC * vc = [RACTestVC new];
-            vc.signal = _signal;
-            [self.navigationController pushViewController:vc animated:YES];
-            NSLog(@"执行结束");
-        }];
-    }];
+    _index = scrollView.contentOffset.y/SCREEN_WIDTH;
     
-//    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-//        NSLog(@"x==%@",x);
-//    } completed:^{
-//        [self popSlowSpaceAnimation:button];
-//        NSLog(@"方法调用了");
-//    }];
+    NSLog(@"index== %ld", _index);
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
     
-    [self.view addSubview:button];
-    [button autoSetDimension:ALDimensionWidth toSize:100];
-    [button autoSetDimension:ALDimensionHeight toSize:44];
-    [button autoCenterInSuperviewMargins];
 }
-
-- (void)buttonClick
-{
-    NSLog(@"点击了");
-}
-
-- (UIButton *)popBtn
-{
-    if (_popBtn == nil) {
-        _popBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _popBtn.frame = CGRectMake(100, 200, 80, 50);
-        [_popBtn setTitle:@"click" forState:UIControlStateNormal];
-        [_popBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_popBtn setBackgroundColor:[UIColor redColor]];
-        [_popBtn addTarget:self action:@selector(popButtonClick) forControlEvents:UIControlEventTouchUpInside];
-        
-        UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-        [_popBtn addGestureRecognizer:pan];
-    }
-    return _popBtn;
-}
-
-- (void)pan:(UIPanGestureRecognizer *)recognizer
-{
-    CGPoint translation = [recognizer translationInView:self.view];
-    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
-    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
-    if (recognizer.state == UIGestureRecognizerStateEnded) {
-        CGPoint velocity = [recognizer velocityInView:self.view];
-        POPDecayAnimation * animation = [POPDecayAnimation animationWithPropertyNamed:kPOPLayerPosition];
-        animation.velocity = [NSValue valueWithCGPoint:velocity];
-        [recognizer.view.layer pop_addAnimation:animation forKey:@"decay"];
-    }
-}
-
-- (void)popButtonClick
-{
-    //减速
-    //    [self popSlowSpaceAnimation:self.popBtn];
-    
-    [self popSpringAnimation:self.popBtn];
-}
-
-/**
- 衰减效果
- 
- @param button 载体
- */
-- (void)popSlowSpaceAnimation:(UIButton*)button
-{
-    POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPosition];
-    animation.duration = 3.0;
-    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.view.center.x, self.view.center.y + 100)];
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    [button.layer pop_addAnimation:animation forKey:@"pop"];
-    
-    [self performSelector:@selector(remomvePOP:) withObject:nil afterDelay:1.5];
-}
-
-/**
- 弹簧效果
- 
- @param button 实现动画的载体
- */
-- (void)popSpringAnimation:(UIButton*)button
-{
-    POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBounds];
-    animation.springSpeed = 6.0;
-    animation.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 200, 90)];
-    animation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
-        if (finished) {
-            button.frame = CGRectMake(0, 0, 100, 45);
-            button.center = self.view.center;
-        }
-    };
-    [button.layer pop_addAnimation:animation forKey:nil];
-}
-
-- (void)remomvePOP:(UIButton*)sender
-{
-    [sender.layer pop_removeAnimationForKey:@"pop"];
-}
-
-
-
-
-
 
 
 

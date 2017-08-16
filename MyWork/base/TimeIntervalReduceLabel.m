@@ -52,6 +52,12 @@
     [self tranceTime];
 }
 
+- (void)startTimeIntervalWithSecond:(NSTimeInterval)time
+{
+    self.timeInterverl = time;
+    [self tranceTime];
+}
+
 - (void)tranceTime
 {
     [self initMTimer];

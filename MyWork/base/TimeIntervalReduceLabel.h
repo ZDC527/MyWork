@@ -16,6 +16,9 @@
 #pragma mark 传入开始时间 毫秒类型
 - (void)startTimeIntervalWithMillisecond:(NSTimeInterval)time;
 
+#pragma mark 传入开始时间 秒类型
+- (void)startTimeIntervalWithSecond:(NSTimeInterval)time;
+
 #pragma mark 移除计时器
 - (void)cancleTimeInterval;
 

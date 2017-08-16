@@ -16,6 +16,7 @@
 		71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */; };
 		71F0184B1F41802800E0F2ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0184A1F41802800E0F2ED /* Default-568h@2x.png */; };
 		71F0184E1F41947A00E0F2ED /* RACTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0184D1F41947A00E0F2ED /* RACTestVC.m */; };
+		71F018591F41AE4D00E0F2ED /* lunch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71F018581F41AE4D00E0F2ED /* lunch.bundle */; };
 		71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		71F0184A1F41802800E0F2ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		71F0184C1F41947A00E0F2ED /* RACTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTestVC.h; sourceTree = "<group>"; };
 		71F0184D1F41947A00E0F2ED /* RACTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACTestVC.m; sourceTree = "<group>"; };
+		71F018581F41AE4D00E0F2ED /* lunch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = lunch.bundle; path = MyWork/lunch.bundle; sourceTree = "<group>"; };
 		71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		716103261E35AEA900F5D4E8 = {
 			isa = PBXGroup;
 			children = (
+				71F018581F41AE4D00E0F2ED /* lunch.bundle */,
 				71F0184A1F41802800E0F2ED /* Default-568h@2x.png */,
 				716103311E35AEAA00F5D4E8 /* MyWork */,
 				716103301E35AEAA00F5D4E8 /* Products */,
@@ -206,6 +209,7 @@
 			files = (
 				7161033F1E35AEAA00F5D4E8 /* Assets.xcassets in Resources */,
 				71F0184B1F41802800E0F2ED /* Default-568h@2x.png in Resources */,
+				71F018591F41AE4D00E0F2ED /* lunch.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@
     MWHomeVC * vc = [MWHomeVC new];
     UINavigationController * nc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nc;
+    [vc showLunchView];
     
     [self.window makeKeyAndVisible];
     

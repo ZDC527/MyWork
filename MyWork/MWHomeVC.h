@@ -10,6 +10,7 @@
 
 @interface MWHomeVC : UIViewController
 
+- (void)showLunchView;
 
 @end
 
