@@ -27,8 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
-    
-    [self reduceTime];
 
     [self initData];
     [self initScrollLunch];
@@ -38,35 +36,38 @@
 {
     _scrollLunch = [[UIScrollView alloc] init];
     _scrollLunch.delegate = self;
-    _scrollLunch.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    _scrollLunch.contentSize = CGSizeMake(SCREEN_WIDTH * self.lunchData.count, SCREEN_HEIGHT);
+    _scrollLunch.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64);
+    _scrollLunch.contentSize = CGSizeMake(SCREEN_WIDTH*_lunchData.count, SCREEN_HEIGHT);
+    _scrollLunch.clipsToBounds = YES;
     _scrollLunch.scrollEnabled = YES;
     _scrollLunch.pagingEnabled = YES;
+    _scrollLunch.bounces = YES;
+    _scrollLunch.showsVerticalScrollIndicator = NO;
     
     _pageTimeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _pageTimeBtn.frame = CGRectMake(SCREEN_WIDTH - 100, SCREEN_HEIGHT - 60, 80, 40);
+    _pageTimeBtn.frame = CGRectMake(SCREEN_WIDTH - 170, SCREEN_HEIGHT - 124, 150, 40);
     _pageTimeBtn.backgroundColor = [UIColor lightTextColor];
     [_pageTimeBtn setTitle:self.reduceLbl.text forState:UIControlStateNormal];
     [_pageTimeBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_pageTimeBtn addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
-    [_scrollLunch addSubview:_pageTimeBtn];
     
     for (NSInteger i = 0; i < self.lunchData.count; i++) {
         NSString *imgStr = [self.lunchData objectAtIndex:i];
         if (imgStr) {
             UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgStr]];
-            imageView.frame = CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            imageView.frame = CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64);
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            imageView.clipsToBounds = YES;
             [_scrollLunch addSubview:imageView];
+            
+            [imageView addSubview:_pageTimeBtn];
+            [self reduceTime];
         }
     }
 }
 
 - (void)initData
 {
-    ///Users/ZDC/MyWork/MyWork/lunch
-//    NSString * lunchPath = [[NSBundle mainBundle]pathForResource:@"lunch" ofType:@"bundle"];
-//    
-//    self.lunchData = [[NSMutableArray alloc] initWithContentsOfFile:lunchPath];
     self.lunchData = @[@"l1.jpg",@"l2.jpg",@"l3.jpg"].mutableCopy;
 }
 
@@ -86,33 +87,42 @@
     if (_index < self.lunchData.count) {
         _index += 1;
     }
-    self.scrollLunch.contentOffset = CGPointMake(SCREEN_WIDTH*_index, 0);
+    self.scrollLunch.contentOffset = CGPointMake(SCREEN_WIDTH*_index, 64);
 }
 
 - (void)reduceTime
 {
-    _reduceLbl = [[TimeIntervalReduceLabel alloc] initWithFrame:CGRectMake(10, 90, SCREEN_WIDTH-20, 30)];
+    _reduceLbl = [[TimeIntervalReduceLabel alloc] init];
     _reduceLbl.textColor = [UIColor redColor];
     _reduceLbl.textAlignment = NSTextAlignmentCenter;
     _reduceLbl.backgroundColor = [UIColor greenColor];
-//    [reduceLbl startTimeIntervalWithStartTimeString:@"2017-02-24 17:30:00"];
+//    [_reduceLbl startTimeIntervalWithStartTimeString:@"2017-02-24 17:30:00"];
     [_reduceLbl startTimeIntervalWithMillisecond:1210185];
-    [self.scrollLunch addSubview:_reduceLbl];
+    [_pageTimeBtn addSubview:_reduceLbl];
 }
 
 #pragma mark UISCROLLVIEWDELEGATE
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
-    _index = scrollView.contentOffset.y/SCREEN_WIDTH;
-    
+    _index = scrollView.contentOffset.x/SCREEN_WIDTH;
+    self.scrollLunch.contentOffset = CGPointMake(SCREEN_WIDTH*_index, 64);
     NSLog(@"index== %ld", _index);
+    if (_index == _lunchData.count - 1) {
+        _scrollLunch.hidden = YES;
+    }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    
+    _index = scrollView.contentOffset.x/SCREEN_WIDTH;
+    if (_index == _lunchData.count-1) {
+        [UIView animateWithDuration:3 animations:^{
+            _scrollLunch.alpha = 0;
+        } completion:^(BOOL finished) {
+            _scrollLunch.hidden = YES;
+        }];
+        
+    }
 }
-
-
 
 @end

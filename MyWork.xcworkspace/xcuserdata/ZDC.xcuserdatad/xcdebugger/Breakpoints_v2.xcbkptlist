@@ -42,61 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWork/MWHomeVC.m"
-            timestampString = "524398472.404114"
+            timestampString = "524742034.187551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-initData"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-scrollViewDidEndScrollingAnimation:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyWork/MWHomeVC.m"
-            timestampString = "524397735.657252"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-initScrollLunch"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MWHomeVC initScrollLunch]"
-                  moduleName = "MyWork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ZDC/MyWork/MyWork/MWHomeVC.m"
-                  timestampString = "524398473.420892"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "2396">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MWHomeVC initScrollLunch]"
-                  moduleName = "MyWork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ZDC/MyWork/MyWork/MWHomeVC.m"
-                  timestampString = "524398473.42398"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "2404">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
