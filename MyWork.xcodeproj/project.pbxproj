@@ -33,8 +33,8 @@
 		716103331E35AEAA00F5D4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716103351E35AEAA00F5D4E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716103361E35AEAA00F5D4E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		716103381E35AEAA00F5D4E8 /* MWHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWHomeVC.h; sourceTree = "<group>"; };
-		716103391E35AEAA00F5D4E8 /* MWHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWHomeVC.m; sourceTree = "<group>"; };
+		716103381E35AEAA00F5D4E8 /* MWHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MWHomeVC.h; path = MyWork/MWHomeVC.h; sourceTree = "<group>"; };
+		716103391E35AEAA00F5D4E8 /* MWHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MWHomeVC.m; path = MyWork/MWHomeVC.m; sourceTree = "<group>"; };
 		7161033E1E35AEAA00F5D4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716103431E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalReduceLabel.h; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlignmentLabel.m; sourceTree = "<group>"; };
 		71F018491F417FDC00E0F2ED /* MWHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWHeader.pch; sourceTree = "<group>"; };
 		71F0184A1F41802800E0F2ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		71F0184C1F41947A00E0F2ED /* RACTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTestVC.h; sourceTree = "<group>"; };
-		71F0184D1F41947A00E0F2ED /* RACTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACTestVC.m; sourceTree = "<group>"; };
+		71F0184C1F41947A00E0F2ED /* RACTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACTestVC.h; path = MyWork/RACTestVC.h; sourceTree = "<group>"; };
+		71F0184D1F41947A00E0F2ED /* RACTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACTestVC.m; path = MyWork/RACTestVC.m; sourceTree = "<group>"; };
 		71F018581F41AE4D00E0F2ED /* lunch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = lunch.bundle; path = MyWork/lunch.bundle; sourceTree = "<group>"; };
 		71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
@@ -75,8 +75,10 @@
 		716103261E35AEA900F5D4E8 = {
 			isa = PBXGroup;
 			children = (
+				717AD3DB1F596F5B006E9D02 /* VC */,
 				71F018581F41AE4D00E0F2ED /* lunch.bundle */,
 				71F0184A1F41802800E0F2ED /* Default-568h@2x.png */,
+				71E2F86B1E4C39FB0099743F /* base */,
 				716103311E35AEAA00F5D4E8 /* MyWork */,
 				716103301E35AEAA00F5D4E8 /* Products */,
 				02A7EE00EFC171CB99F943F1 /* Pods */,
@@ -96,16 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				71F018491F417FDC00E0F2ED /* MWHeader.pch */,
-				71E2F86B1E4C39FB0099743F /* base */,
 				716103351E35AEAA00F5D4E8 /* AppDelegate.h */,
 				716103361E35AEAA00F5D4E8 /* AppDelegate.m */,
-				716103381E35AEAA00F5D4E8 /* MWHomeVC.h */,
-				716103391E35AEAA00F5D4E8 /* MWHomeVC.m */,
 				7161033E1E35AEAA00F5D4E8 /* Assets.xcassets */,
 				716103431E35AEAA00F5D4E8 /* Info.plist */,
 				716103321E35AEAA00F5D4E8 /* Supporting Files */,
-				71F0184C1F41947A00E0F2ED /* RACTestVC.h */,
-				71F0184D1F41947A00E0F2ED /* RACTestVC.m */,
 			);
 			path = MyWork;
 			sourceTree = "<group>";
@@ -118,6 +115,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		717AD3DB1F596F5B006E9D02 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				71F0184C1F41947A00E0F2ED /* RACTestVC.h */,
+				71F0184D1F41947A00E0F2ED /* RACTestVC.m */,
+				716103381E35AEAA00F5D4E8 /* MWHomeVC.h */,
+				716103391E35AEAA00F5D4E8 /* MWHomeVC.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
 		71E2F86B1E4C39FB0099743F /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +136,8 @@
 				71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */,
 				71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */,
 			);
-			path = base;
+			name = base;
+			path = MyWork/base;
 			sourceTree = "<group>";
 		};
 		C85F22B728F01A3F0CBDB9B2 /* Frameworks */ = {
