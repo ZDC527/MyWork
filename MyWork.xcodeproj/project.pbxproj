@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6A16A6BC4C5767EA934FBA /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCF82CFB1E5B74F9BB6710F /* Pods_MyWork.framework */; };
+		712FE8A21FC6C0DA0068DBAB /* RACTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE89F1FC6C0DA0068DBAB /* RACTestVC.m */; };
+		712FE8A31FC6C0DA0068DBAB /* CompictureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE8A01FC6C0DA0068DBAB /* CompictureVC.m */; };
+		712FE8A61FC6C1390068DBAB /* DispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE8A51FC6C1390068DBAB /* DispatchVC.m */; };
+		712FE8A91FC6C8100068DBAB /* UITableViewCell+reuseridentify.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE8A81FC6C8100068DBAB /* UITableViewCell+reuseridentify.m */; };
+		712FE8AC1FC7B9F00068DBAB /* PaiXuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE8AB1FC7B9F00068DBAB /* PaiXuVC.m */; };
+		712FE8AF1FC7BA030068DBAB /* SuanFaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 712FE8AE1FC7BA030068DBAB /* SuanFaVC.m */; };
 		714FFF021F417BE500D0D9C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103361E35AEAA00F5D4E8 /* AppDelegate.m */; };
 		714FFF031F417BE500D0D9C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716103331E35AEAA00F5D4E8 /* main.m */; };
 		714FFF051F417C4900D0D9C5 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714FFF041F417C4900D0D9C5 /* Pods_MyWork.framework */; };
@@ -15,13 +22,24 @@
 		71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */; };
 		71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */; };
 		71F0184B1F41802800E0F2ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0184A1F41802800E0F2ED /* Default-568h@2x.png */; };
-		71F0184E1F41947A00E0F2ED /* RACTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0184D1F41947A00E0F2ED /* RACTestVC.m */; };
 		71F018591F41AE4D00E0F2ED /* lunch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71F018581F41AE4D00E0F2ED /* lunch.bundle */; };
 		71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52EC9FD380E278B191B784BB /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
+		712FE89E1FC6C0DA0068DBAB /* CompictureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompictureVC.h; sourceTree = "<group>"; };
+		712FE89F1FC6C0DA0068DBAB /* RACTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACTestVC.m; sourceTree = "<group>"; };
+		712FE8A01FC6C0DA0068DBAB /* CompictureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompictureVC.m; sourceTree = "<group>"; };
+		712FE8A11FC6C0DA0068DBAB /* RACTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTestVC.h; sourceTree = "<group>"; };
+		712FE8A41FC6C1390068DBAB /* DispatchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchVC.h; sourceTree = "<group>"; };
+		712FE8A51FC6C1390068DBAB /* DispatchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchVC.m; sourceTree = "<group>"; };
+		712FE8A71FC6C8100068DBAB /* UITableViewCell+reuseridentify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+reuseridentify.h"; sourceTree = "<group>"; };
+		712FE8A81FC6C8100068DBAB /* UITableViewCell+reuseridentify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+reuseridentify.m"; sourceTree = "<group>"; };
+		712FE8AA1FC7B9F00068DBAB /* PaiXuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaiXuVC.h; sourceTree = "<group>"; };
+		712FE8AB1FC7B9F00068DBAB /* PaiXuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaiXuVC.m; sourceTree = "<group>"; };
+		712FE8AD1FC7BA030068DBAB /* SuanFaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuanFaVC.h; sourceTree = "<group>"; };
+		712FE8AE1FC7BA030068DBAB /* SuanFaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuanFaVC.m; sourceTree = "<group>"; };
 		714FFEF61F417B2D00D0D9C5 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		714FFEF71F417B2D00D0D9C5 /* iCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCarousel.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/iCarousel/iCarousel.framework"; sourceTree = "<group>"; };
 		714FFEF81F417B2D00D0D9C5 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "../Library/Developer/Xcode/DerivedData/MyWork-emkdktaawsfvnieswlkwesxlqtmc/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
@@ -37,18 +55,18 @@
 		716103391E35AEAA00F5D4E8 /* MWHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MWHomeVC.m; path = MyWork/MWHomeVC.m; sourceTree = "<group>"; };
 		7161033E1E35AEAA00F5D4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716103431E35AEAA00F5D4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7172CB351FB3093900725F28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		71E2F8811E4C3B760099743F /* TimeIntervalReduceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalReduceLabel.h; sourceTree = "<group>"; };
 		71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalReduceLabel.m; sourceTree = "<group>"; };
 		71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlignmentLabel.h; sourceTree = "<group>"; };
 		71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlignmentLabel.m; sourceTree = "<group>"; };
 		71F018491F417FDC00E0F2ED /* MWHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWHeader.pch; sourceTree = "<group>"; };
 		71F0184A1F41802800E0F2ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		71F0184C1F41947A00E0F2ED /* RACTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACTestVC.h; path = MyWork/RACTestVC.h; sourceTree = "<group>"; };
-		71F0184D1F41947A00E0F2ED /* RACTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACTestVC.m; path = MyWork/RACTestVC.m; sourceTree = "<group>"; };
 		71F018581F41AE4D00E0F2ED /* lunch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = lunch.bundle; path = MyWork/lunch.bundle; sourceTree = "<group>"; };
 		71F3B6461F4136B700CFEAD9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		71F3B6471F4136B700CFEAD9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		B43BFDCE27FF8346E90C269A /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
+		BDCF82CFB1E5B74F9BB6710F /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				714FFF051F417C4900D0D9C5 /* Pods_MyWork.framework in Frameworks */,
+				0B6A16A6BC4C5767EA934FBA /* Pods_MyWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +91,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		712FE89D1FC6C0DA0068DBAB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				712FE89E1FC6C0DA0068DBAB /* CompictureVC.h */,
+				712FE8A01FC6C0DA0068DBAB /* CompictureVC.m */,
+				712FE8A11FC6C0DA0068DBAB /* RACTestVC.h */,
+				712FE89F1FC6C0DA0068DBAB /* RACTestVC.m */,
+				712FE8A41FC6C1390068DBAB /* DispatchVC.h */,
+				712FE8A51FC6C1390068DBAB /* DispatchVC.m */,
+				712FE8AA1FC7B9F00068DBAB /* PaiXuVC.h */,
+				712FE8AB1FC7B9F00068DBAB /* PaiXuVC.m */,
+				712FE8AD1FC7BA030068DBAB /* SuanFaVC.h */,
+				712FE8AE1FC7BA030068DBAB /* SuanFaVC.m */,
+			);
+			name = VC;
+			path = MyWork/VC;
+			sourceTree = "<group>";
+		};
 		716103261E35AEA900F5D4E8 = {
 			isa = PBXGroup;
 			children = (
-				717AD3DB1F596F5B006E9D02 /* VC */,
+				712FE89D1FC6C0DA0068DBAB /* VC */,
+				716103381E35AEAA00F5D4E8 /* MWHomeVC.h */,
+				716103391E35AEAA00F5D4E8 /* MWHomeVC.m */,
 				71F018581F41AE4D00E0F2ED /* lunch.bundle */,
 				71F0184A1F41802800E0F2ED /* Default-568h@2x.png */,
 				71E2F86B1E4C39FB0099743F /* base */,
@@ -115,17 +154,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		717AD3DB1F596F5B006E9D02 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				71F0184C1F41947A00E0F2ED /* RACTestVC.h */,
-				71F0184D1F41947A00E0F2ED /* RACTestVC.m */,
-				716103381E35AEAA00F5D4E8 /* MWHomeVC.h */,
-				716103391E35AEAA00F5D4E8 /* MWHomeVC.m */,
-			);
-			name = VC;
-			sourceTree = "<group>";
-		};
 		71E2F86B1E4C39FB0099743F /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +163,8 @@
 				71E2F8821E4C3B760099743F /* TimeIntervalReduceLabel.m */,
 				71E2F8871E51A93E0099743F /* UIAlignmentLabel.h */,
 				71E2F8881E51A93E0099743F /* UIAlignmentLabel.m */,
+				712FE8A71FC6C8100068DBAB /* UITableViewCell+reuseridentify.h */,
+				712FE8A81FC6C8100068DBAB /* UITableViewCell+reuseridentify.m */,
 			);
 			name = base;
 			path = MyWork/base;
@@ -143,6 +173,7 @@
 		C85F22B728F01A3F0CBDB9B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7172CB351FB3093900725F28 /* MobileCoreServices.framework */,
 				714FFF041F417C4900D0D9C5 /* Pods_MyWork.framework */,
 				714FFEF61F417B2D00D0D9C5 /* AFNetworking.framework */,
 				714FFEF71F417B2D00D0D9C5 /* iCarousel.framework */,
@@ -150,6 +181,7 @@
 				714FFEF91F417B2D00D0D9C5 /* pop.framework */,
 				714FFEFA1F417B2D00D0D9C5 /* PureLayout.framework */,
 				714FFEFB1F417B2D00D0D9C5 /* ReactiveObjC.framework */,
+				BDCF82CFB1E5B74F9BB6710F /* Pods_MyWork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,11 +310,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				714FFF021F417BE500D0D9C5 /* AppDelegate.m in Sources */,
-				71F0184E1F41947A00E0F2ED /* RACTestVC.m in Sources */,
+				712FE8A21FC6C0DA0068DBAB /* RACTestVC.m in Sources */,
 				714FFF031F417BE500D0D9C5 /* main.m in Sources */,
+				712FE8A61FC6C1390068DBAB /* DispatchVC.m in Sources */,
 				7161033A1E35AEAA00F5D4E8 /* MWHomeVC.m in Sources */,
 				71E2F8891E51A93E0099743F /* UIAlignmentLabel.m in Sources */,
+				712FE8A31FC6C0DA0068DBAB /* CompictureVC.m in Sources */,
 				71E2F8831E4C3B760099743F /* TimeIntervalReduceLabel.m in Sources */,
+				712FE8AF1FC7BA030068DBAB /* SuanFaVC.m in Sources */,
+				712FE8A91FC6C8100068DBAB /* UITableViewCell+reuseridentify.m in Sources */,
+				712FE8AC1FC7B9F00068DBAB /* PaiXuVC.m in Sources */,
 				71F3B6481F4136B700CFEAD9 /* UITextView+Placeholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

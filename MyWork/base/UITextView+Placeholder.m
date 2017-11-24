@@ -67,7 +67,6 @@
     return color;
 }
 
-
 #pragma mark - `observingKeys`
 
 + (NSArray *)observingKeys {
